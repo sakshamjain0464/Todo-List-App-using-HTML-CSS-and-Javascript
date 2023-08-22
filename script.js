@@ -19,6 +19,7 @@ function addTask() {
             let taskButtons = document.querySelector('.task-btn-container')
             taskButtons.style.display = 'flex'
         }
+        inputBox.value = ''
     }
 }
 
