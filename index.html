@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scale = none">
+    <link rel="stylesheet" href="style.css"> <!--Css file Linked -->
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Todo List App</title>
+</head>
+
+<body>
+    <main>
+        <div class="todo-container">
+            <div class="head">
+                <h2>Todo List <i class="fa fa-list-ul"></i></h2>
+            </div>
+            <div class="add-task">
+                <input type="text" id="task-input" placeholder="Add Task">
+                <button onclick="addTask()"><i class="fa fa-plus-square-o"></i>Add Task</button>
+            </div>
+            <div class="task-list">
+                <ul> <!-- Empty Task list-->
+                    <!-- List items will be added usinf javascript -->
+
+                </ul>
+            </div>
+            <div class="task-btn-container">
+                <div class="mark-btn" onclick="markAll()">
+                    <p><i class="fa fa-check-circle"></i> Marks all as done</p>
+                </div>
+                <div class="removebtn" onclick="removeAll()">
+                    <p><i class="fa fa-times-circle"></i> Remove all Tasks</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<!-- Javascript File Linked -->
+<script src="script.js"></script>
+
+</html>
